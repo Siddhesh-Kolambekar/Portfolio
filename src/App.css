@@ -1,0 +1,132 @@
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+section {
+  scroll-margin-top: 50px;
+  padding: 1rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+}
+
+.nav-link,
+.resume-button {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.resume-button {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.resume-button:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+  }
+
+  .nav-links-container.open {
+    display: flex;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+  }
+
+  .resume-button {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hand {
+  animation: wave 2s ease-in-out infinite;
+}
