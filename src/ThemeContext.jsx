@@ -6,7 +6,7 @@ export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    document.body.style.backgroundColor = darkMode ? "#111111" : "#ffffff";
+    document.body.style.backgroundColor = darkMode ? "#111111" : "whitesmoke";
   }, [darkMode]);
 
   return (
