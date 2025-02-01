@@ -29,7 +29,8 @@ const Project = () => {
             padding: "5vh",
             margin: "1vh",
             backgroundColor:"white",
-            borderRadius:"15px"
+            borderRadius:"15px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
           }}
         >
           <img
@@ -92,7 +93,8 @@ const Project = () => {
             padding: "5vh",
             margin: "1vh",
             backgroundColor:"white",
-            borderRadius:"15px"
+            borderRadius:"15px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
           }}
         >
           <img
