@@ -69,7 +69,7 @@ const About = () => {
   return (
     <>
       <div style={{ padding: '2rem' }}>
-        <h1 style={headingStyle}>About Me</h1>
+        <h1 style={headingStyle} className="variable">About Me</h1>
         <div style={containerStyle}>
           <table style={tableStyle}>
             <tbody>

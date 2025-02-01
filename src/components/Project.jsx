@@ -10,6 +10,7 @@ const Project = () => {
           marginBottom: "6vh",
           fontSize: "5vh",
         }}
+        className="variable"
       >
         Projects
       </h1>

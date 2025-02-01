@@ -92,7 +92,7 @@ const Contact = () => {
 
   return (
     <>
-      <h1 style={{textAlign: "center", marginBottom: "6vh", fontSize: "5vh"}}>Contact</h1>
+      <h1 style={{textAlign: "center", marginBottom: "6vh", fontSize: "5vh"}} className="variable">Contact</h1>
       <form style={formStyle} onSubmit={handleSubmit}>
         <label style={labelStyle} htmlFor="name">
           Name

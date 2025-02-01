@@ -99,7 +99,7 @@ const Skill = () => {
   return (
     <>
       <div style={containerStyle}>
-        <h1 style={titleStyle}>Skills</h1>
+        <h1 style={titleStyle} className="variable">Skills</h1>
         <div style={gridStyle}>
           {skills.map((skill, index) => (
             <div

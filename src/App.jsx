@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState,useContext,useEffect } from 'react';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 import Skill from './components/Skill';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import { ThemeContext } from './ThemeContext';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,6 +24,15 @@ function App() {
     downloadLink.click();
   };
 
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+
+  useEffect(() => {
+    const elements = document.querySelectorAll(".variable");
+    elements.forEach(el => {
+      el.style.color = darkMode ? "whitesmoke" : "black";
+    });
+  }, [darkMode]);
+
   return (
     <>
       <nav className="navbar">
@@ -37,6 +47,7 @@ function App() {
           <a href="#skill" className="nav-link" onClick={toggleMenu}>Skill</a>
           <a href="#project" className="nav-link" onClick={toggleMenu}>Project</a>
           <a href="#contact" className="nav-link" onClick={toggleMenu}>Contact</a>
+          <button className="resume-button" onClick={() => setDarkMode(prev => !prev)}>Toggle theme</button>
           <button className="resume-button" onClick={openPdf}>Resume</button>
         </div>
       </nav>
