@@ -63,7 +63,8 @@ const Project = () => {
                   padding: "0.5rem 1rem",
                   textAlign: "center",
                   backgroundColor:"black",
-                  borderRadius:"5px"
+                  borderRadius:"5px",
+                  cursor:"pointer"
                 }}
               >
                 Github
@@ -77,7 +78,8 @@ const Project = () => {
                   padding: "0.5rem 1rem",
                   textAlign: "center",
                   backgroundColor:"black",
-                  borderRadius:"5px"
+                  borderRadius:"5px",
+                  cursor:"pointer"
                 }}
               >Netlify</button>
             </a>
@@ -123,7 +125,8 @@ const Project = () => {
                   padding: "0.5rem 1rem",
                   textAlign: "center",
                   backgroundColor:"black",
-                  borderRadius:"5px"
+                  borderRadius:"5px",
+                  cursor:"pointer"
                 }}
               >Github</button>
             </a>
@@ -138,7 +141,8 @@ const Project = () => {
                   padding: "0.5rem 1rem",
                   textAlign: "center",
                   backgroundColor:"black",
-                  borderRadius:"5px"
+                  borderRadius:"5px",
+                  cursor:"pointer"
                 }}
               >Netlify</button>
             </a>

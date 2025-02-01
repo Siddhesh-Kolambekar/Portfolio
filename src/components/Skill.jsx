@@ -11,7 +11,7 @@ const Skill = () => {
     textAlign: "center",
     marginBottom: "3rem",
     fontSize: "clamp(1.5rem, 5vw, 3rem)",
-    color: "#333",
+    color: "#000000",
     fontWeight: "bold",
   };
 
@@ -27,9 +27,9 @@ const Skill = () => {
     flexDirection: "column",
     alignItems: "center",
     padding: "1rem",
-    backgroundColor: "#f9f9f9",
+    backgroundColor: "#ffffff",
     borderRadius: "10px",
-    boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     transition: "transform 0.3s ease, box-shadow 0.3s ease",
   };
 
@@ -49,7 +49,7 @@ const Skill = () => {
 
   const labelStyle = {
     fontSize: "1rem",
-    color: "#555",
+    color: "#000000",
     fontWeight: "500",
   };
 

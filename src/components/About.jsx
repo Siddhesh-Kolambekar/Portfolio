@@ -18,7 +18,7 @@ const About = () => {
     textAlign: 'center',
     marginBottom: '2rem',
     fontSize: '2.5rem',
-    color: '#333',
+    color: '#000000',
     paddingBottom: '10px',
   };
 
@@ -53,7 +53,7 @@ const About = () => {
     width: '45%',
     fontSize: '1rem',
     lineHeight: '1.6',
-    color: '#555',
+    color: '#000000',
     backgroundColor: 'white',
     padding: '20px',
     borderRadius: '8px',
