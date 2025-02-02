@@ -15,8 +15,8 @@ function App() {
   };
 
   const openPdf = () => {
-    const openPdfUrl = 'https://drive.google.com/file/d/14_F9Pq_rHHRnRxJJVc7OglurZk4tTx7-/view';
-    const downloadPdfUrl = 'https://drive.google.com/uc?export=download&id=14_F9Pq_rHHRnRxJJVc7OglurZk4tTx7-';
+    const openPdfUrl = 'https://drive.google.com/file/d/1QcvBrzYizzLZGRJaBG0KgEJz1GTiPzv6/view?';
+    const downloadPdfUrl = 'https://drive.google.com/uc?export=download&id=1QcvBrzYizzLZGRJaBG0KgEJz1GTiPzv6';
     window.open(openPdfUrl, '_blank');
     const downloadLink = document.createElement('a');
     downloadLink.href = downloadPdfUrl;
