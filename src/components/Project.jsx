@@ -72,7 +72,7 @@ const Project = () => {
                 Github
               </button>
             </a>
-            <a href="https://cool-creponne-5792ec.netlify.app/" target="_blank">
+            <a href="https://fastidious-paprenjak-8b655b.netlify.app/" target="_blank">
               <button
                 style={{
                   color: "white",
