@@ -15,7 +15,7 @@ function App() {
   };
 
   const openPdf = () => {
-    const openPdfUrl = 'https://drive.google.com/file/d/1QcvBrzYizzLZGRJaBG0KgEJz1GTiPzv6/view?';
+    const openPdfUrl = 'https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679f400df97830ef5e9154e4';
     const downloadPdfUrl = 'https://drive.google.com/uc?export=download&id=1QcvBrzYizzLZGRJaBG0KgEJz1GTiPzv6';
     window.open(openPdfUrl, '_blank');
     const downloadLink = document.createElement('a');
