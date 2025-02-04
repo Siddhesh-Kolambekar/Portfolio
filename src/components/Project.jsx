@@ -23,25 +23,29 @@ const Project = () => {
           flexWrap: "wrap",
         }}
       >
-        <div
-          style={{
-            width: "40%",
-            padding: "5vh",
-            margin: "1vh",
-            backgroundColor:"white",
-            borderRadius:"15px",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
-          }}
-        >
-          <img
-            src={project1}
-            alt="Project 1"
-            style={{
-              width: "60vh",
-              display: "grid",
-              justifySelf: "center",
-            }}
-          />
+<div
+  style={{
+    width: "60vh", // Match the image width
+    height: "auto", // Ensures height adjusts dynamically
+    padding: "5vh",
+    margin: "1vh",
+    backgroundColor: "white",
+    borderRadius: "15px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center", // Center content
+  }}
+>
+  <img
+    src={project1}
+    alt="Project 1"
+    style={{
+      width: "100%", // Makes the image take the full width of the div
+      height: "auto",
+    }}
+  />
+
           <h1>Name: Dish Scanner</h1>
           <h3>
             Description: This project allows users to easily retrieve the
@@ -66,7 +70,8 @@ const Project = () => {
                   textAlign: "center",
                   backgroundColor:"black",
                   borderRadius:"5px",
-                  cursor:"pointer"
+                  cursor:"pointer",
+                  marginRight:"20vh"
                 }}
               >
                 Github
@@ -88,24 +93,28 @@ const Project = () => {
           </div>
         </div>
         <div
-          style={{
-            width: "40%",
-            padding: "5vh",
-            margin: "1vh",
-            backgroundColor:"white",
-            borderRadius:"15px",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
-          }}
-        >
-          <img
-            src={project2}
-            alt="Project 2"
-            style={{
-              width: "60vh",
-              display: "grid",
-              justifySelf: "center",
-            }}
-          />
+  style={{
+    width: "60vh", // Match the image width
+    height: "auto", // Ensures height adjusts dynamically
+    padding: "5vh",
+    margin: "1vh",
+    backgroundColor: "white",
+    borderRadius: "15px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center", // Center content
+  }}
+>
+  <img
+    src={project2}
+    alt="Project 2"
+    style={{
+      width: "100%", // Makes the image take the full width of the div
+      height: "auto",
+    }}
+  />
+
           <h1>Name: Health Tracker</h1>
           <h3>
             This project tracks and manages patient medication dosages, ensuring
@@ -129,7 +138,8 @@ const Project = () => {
                   textAlign: "center",
                   backgroundColor:"black",
                   borderRadius:"5px",
-                  cursor:"pointer"
+                  cursor:"pointer",
+                  marginRight:"20vh"
                 }}
               >Github</button>
             </a>
@@ -153,7 +163,7 @@ const Project = () => {
         </div>
       </div>
       <hr style={{ marginTop: "3vh" }} />
-      {/* Responsive Styles */}
+      
       <style>
         {`
           @media only screen and (max-width: 1024px) {
