@@ -16,7 +16,7 @@ function App() {
 
   const openPdf = () => {
     const openPdfUrl = 'https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679f400df97830ef5e9154e4';
-    const downloadPdfUrl = 'https://drive.google.com/uc?export=download&id=1QcvBrzYizzLZGRJaBG0KgEJz1GTiPzv6';
+    const downloadPdfUrl = 'https://drive.google.com/uc?export=download&id=1QJw18gWvr920-l7w-zFHMTjR0QXz55sZ';
     window.open(openPdfUrl, '_blank');
     const downloadLink = document.createElement('a');
     downloadLink.href = downloadPdfUrl;
