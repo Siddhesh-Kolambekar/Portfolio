@@ -23,28 +23,28 @@ const Project = () => {
           flexWrap: "wrap",
         }}
       >
-<div
-  style={{
-    width: "60vh", // Match the image width
-    height: "auto", // Ensures height adjusts dynamically
-    padding: "5vh",
-    margin: "1vh",
-    backgroundColor: "white",
-    borderRadius: "15px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center", // Center content
-  }}
->
-  <img
-    src={project1}
-    alt="Project 1"
-    style={{
-      width: "100%", // Makes the image take the full width of the div
-      height: "auto",
-    }}
-  />
+        <div
+          style={{
+            width: "60vh", // Match the image width
+            height: "auto", // Ensures height adjusts dynamically
+            padding: "5vh",
+            margin: "1vh",
+            backgroundColor: "white",
+            borderRadius: "15px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center", // Center content
+          }}
+        >
+          <img
+            src={project1}
+            alt="Project 1"
+            style={{
+              width: "100%", // Makes the image take the full width of the div
+              height: "auto",
+            }}
+          />
 
           <h1>Name: Dish Scanner</h1>
           <h3>
@@ -68,52 +68,57 @@ const Project = () => {
                   fontSize: "1rem",
                   padding: "0.5rem 1rem",
                   textAlign: "center",
-                  backgroundColor:"black",
-                  borderRadius:"5px",
-                  cursor:"pointer",
-                  marginRight:"20vh"
+                  backgroundColor: "black",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                  marginRight: "20vh",
                 }}
               >
                 Github
               </button>
             </a>
-            <a href="https://fastidious-paprenjak-8b655b.netlify.app/" target="_blank">
+            <a
+              href="https://fastidious-paprenjak-8b655b.netlify.app/"
+              target="_blank"
+            >
               <button
                 style={{
                   color: "white",
                   fontSize: "1rem",
                   padding: "0.5rem 1rem",
                   textAlign: "center",
-                  backgroundColor:"black",
-                  borderRadius:"5px",
-                  cursor:"pointer"
+                  backgroundColor: "black",
+                  borderRadius: "5px",
+                  cursor: "pointer",
                 }}
-              >Netlify</button>
+              >
+                Netlify
+              </button>
             </a>
           </div>
         </div>
         <div
-  style={{
-    width: "60vh", // Match the image width
-    height: "auto", // Ensures height adjusts dynamically
-    padding: "5vh",
-    margin: "1vh",
-    backgroundColor: "white",
-    borderRadius: "15px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center", // Center content
-  }}
->
-  <img
-    src={project2}
-    alt="Project 2"
-    style={{
-      width: "100%", // Makes the image take the full width of the div
-      height: "auto",
-    }}
-  />
+          style={{
+            width: "60vh", // Match the image width
+            height: "auto", // Ensures height adjusts dynamically
+            padding: "5vh",
+            margin: "1vh",
+            backgroundColor: "white",
+            borderRadius: "15px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center", // Center content
+          }}
+        >
+          <img
+            src={project2}
+            alt="Project 2"
+            style={{
+              width: "100%", // Makes the image take the full width of the div
+              height: "auto",
+            }}
+          />
 
           <h1>Name: Health Tracker</h1>
           <h3>
@@ -125,7 +130,7 @@ const Project = () => {
             better health outcomes.
           </h3>
           <h4>TechStack: React | Firebase</h4>
-          <div style={{display:"flex",justifyContent:"space-around"}}>
+          <div style={{ display: "flex", justifyContent: "space-around" }}>
             <a
               href="https://github.com/Siddhesh-Kolambekar/Health-Tracker"
               target="_blank"
@@ -136,12 +141,14 @@ const Project = () => {
                   fontSize: "1rem",
                   padding: "0.5rem 1rem",
                   textAlign: "center",
-                  backgroundColor:"black",
-                  borderRadius:"5px",
-                  cursor:"pointer",
-                  marginRight:"20vh"
+                  backgroundColor: "black",
+                  borderRadius: "5px",
+                  cursor: "pointer",
+                  marginRight: "20vh",
                 }}
-              >Github</button>
+              >
+                Github
+              </button>
             </a>
             <a
               href="https://incredible-llama-01f40f.netlify.app/"
@@ -153,17 +160,19 @@ const Project = () => {
                   fontSize: "1rem",
                   padding: "0.5rem 1rem",
                   textAlign: "center",
-                  backgroundColor:"black",
-                  borderRadius:"5px",
-                  cursor:"pointer"
+                  backgroundColor: "black",
+                  borderRadius: "5px",
+                  cursor: "pointer",
                 }}
-              >Netlify</button>
+              >
+                Netlify
+              </button>
             </a>
           </div>
         </div>
       </div>
       <hr style={{ marginTop: "3vh" }} />
-      
+
       <style>
         {`
           @media only screen and (max-width: 1024px) {

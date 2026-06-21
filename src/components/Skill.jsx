@@ -1,5 +1,3 @@
-import React from "react";
-
 const Skill = () => {
   const containerStyle = {
     maxWidth: "1200px",
@@ -99,7 +97,9 @@ const Skill = () => {
   return (
     <>
       <div style={containerStyle}>
-        <h1 style={titleStyle} className="variable">Skills</h1>
+        <h1 style={titleStyle} className="variable">
+          Skills
+        </h1>
         <div style={gridStyle}>
           {skills.map((skill, index) => (
             <div

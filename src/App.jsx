@@ -1,11 +1,11 @@
-import React, { useState,useContext,useEffect } from 'react';
-import './App.css';
-import Home from './components/Home';
-import About from './components/About';
-import Skill from './components/Skill';
-import Project from './components/Project';
-import Contact from './components/Contact';
-import { ThemeContext } from './ThemeContext';
+import { useState, useContext, useEffect } from "react";
+import "./App.css";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skill from "./components/Skill";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
+import { ThemeContext } from "./ThemeContext";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,12 +15,14 @@ function App() {
   };
 
   const openPdf = () => {
-    const openPdfUrl = 'https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679f400df97830ef5e9154e4';
-    const downloadPdfUrl = 'https://drive.google.com/uc?export=download&id=1QJw18gWvr920-l7w-zFHMTjR0QXz55sZ';
-    window.open(openPdfUrl, '_blank');
-    const downloadLink = document.createElement('a');
+    const openPdfUrl =
+      "https://resume-builder-test-new.masaischool.com/resume/public?resumeId=679f400df97830ef5e9154e4";
+    const downloadPdfUrl =
+      "https://drive.google.com/uc?export=download&id=1QJw18gWvr920-l7w-zFHMTjR0QXz55sZ";
+    window.open(openPdfUrl, "_blank");
+    const downloadLink = document.createElement("a");
     downloadLink.href = downloadPdfUrl;
-    downloadLink.download = 'SiddheshKolambekar.pdf';
+    downloadLink.download = "SiddheshKolambekar.pdf";
     downloadLink.click();
   };
 
@@ -28,7 +30,7 @@ function App() {
 
   useEffect(() => {
     const elements = document.querySelectorAll(".variable");
-    elements.forEach(el => {
+    elements.forEach((el) => {
       el.style.color = darkMode ? "whitesmoke" : "black";
     });
   }, [darkMode]);
@@ -41,14 +43,31 @@ function App() {
             ☰
           </button>
         </div>
-        <div className={`nav-links-container ${menuOpen ? 'open' : ''}`}>
-          <a href="#home" className="nav-link" onClick={toggleMenu}>Home</a>
-          <a href="#about" className="nav-link" onClick={toggleMenu}>About</a>
-          <a href="#skill" className="nav-link" onClick={toggleMenu}>Skill</a>
-          <a href="#project" className="nav-link" onClick={toggleMenu}>Project</a>
-          <a href="#contact" className="nav-link" onClick={toggleMenu}>Contact</a>
-          <button className="resume-button" onClick={() => setDarkMode(prev => !prev)}>Toggle theme</button>
-          <button className="resume-button" onClick={openPdf}>Resume</button>
+        <div className={`nav-links-container ${menuOpen ? "open" : ""}`}>
+          <a href="#home" className="nav-link" onClick={toggleMenu}>
+            Home
+          </a>
+          <a href="#about" className="nav-link" onClick={toggleMenu}>
+            About
+          </a>
+          <a href="#skill" className="nav-link" onClick={toggleMenu}>
+            Skill
+          </a>
+          <a href="#project" className="nav-link" onClick={toggleMenu}>
+            Project
+          </a>
+          <a href="#contact" className="nav-link" onClick={toggleMenu}>
+            Contact
+          </a>
+          <button
+            className="resume-button"
+            onClick={() => setDarkMode((prev) => !prev)}
+          >
+            Toggle theme
+          </button>
+          <button className="resume-button" onClick={openPdf}>
+            Resume
+          </button>
         </div>
       </nav>
       <main>
