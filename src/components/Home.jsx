@@ -1,3 +1,6 @@
+import "./Home.css";
+import profilePhoto from "../assets/ResumePic.png";
+
 const Home = () => (
   <div className="hero content-width">
     <div className="hero-copy">
@@ -25,37 +28,18 @@ const Home = () => (
         <span>Mumbai, India</span>
       </div>
     </div>
-    <div
-      className="hero-visual"
-      aria-label="Decorative frontend development graphic"
-    >
-      <div className="orbit orbit-one" />
-      <div className="orbit orbit-two" />
-      <div className="code-window">
-        <div className="window-dots">
-          <i />
-          <i />
-          <i />
-        </div>
-        <p>
-          <span>const</span> developer = {"{"}
-        </p>
-        <p className="code-indent">
-          name: <b>&quot;Siddhesh&quot;</b>,
-        </p>
-        <p className="code-indent">
-          focus: <b>&quot;Frontend&quot;</b>,
-        </p>
-        <p className="code-indent">
-          stack: [&quot;React&quot;, &quot;Next.js&quot;]
-        </p>
-        <p>{"}"}</p>
-        <div className="code-cursor">▍</div>
+
+    <div className="hero-visual profile-visual">
+      <div className="profile-photo-frame">
+        <img
+          className="profile-photo"
+          src={profilePhoto}
+          alt="Portrait of Siddhesh Kolambekar"
+        />
       </div>
-      <div className="floating-tag tag-react">React.js</div>
-      <div className="floating-tag tag-next">Next.js</div>
-      <div className="floating-tag tag-ts">TypeScript</div>
+      <span className="profile-photo-label">Frontend Developer</span>
     </div>
   </div>
 );
+
 export default Home;
