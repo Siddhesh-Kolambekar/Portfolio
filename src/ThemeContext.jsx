@@ -1,12 +1,14 @@
-import { createContext, useState, useEffect } from "react";
-
-export const ThemeContext = createContext();
+import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import { ThemeContext } from "./ThemeContext.js";
 
 export const ThemeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    window.matchMedia?.("(prefers-color-scheme: dark)").matches ?? false,
+  );
 
   useEffect(() => {
-    document.body.style.backgroundColor = darkMode ? "#111111" : "whitesmoke";
+    document.documentElement.dataset.theme = darkMode ? "dark" : "light";
   }, [darkMode]);
 
   return (
@@ -14,4 +16,8 @@ export const ThemeProvider = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   );
+};
+
+ThemeProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };

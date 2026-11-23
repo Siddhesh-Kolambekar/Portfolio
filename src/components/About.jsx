@@ -1,132 +1,67 @@
-const About = () => {
-  const containerStyle = {
-    display: "flex",
-    justifyContent: "space-around",
-    alignItems: "center",
-    flexWrap: "wrap",
-    padding: "2rem",
-    backgroundColor: "lightgray",
-    borderRadius: "12px",
-    boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
-    maxWidth: "1200px",
-    margin: "0 auto",
-  };
-
-  const headingStyle = {
-    textAlign: "center",
-    marginBottom: "2rem",
-    fontSize: "2.5rem",
-    color: "#000000",
-    paddingBottom: "10px",
-  };
-
-  const tableStyle = {
-    width: "45%",
-    fontSize: "1rem",
-    backgroundColor: "white",
-    borderRadius: "8px",
-    boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-    overflow: "hidden",
-  };
-
-  const tableCellStyle = {
-    padding: "12px",
-    borderBottom: "1px solid #eee",
-  };
-
-  const thStyle = {
-    ...tableCellStyle,
-    backgroundColor: "#007bff",
-    color: "white",
-    fontWeight: "bold",
-    width: "30%",
-  };
-
-  const tdStyle = {
-    ...tableCellStyle,
-    width: "70%",
-  };
-
-  const profileTextStyle = {
-    width: "45%",
-    fontSize: "1rem",
-    lineHeight: "1.6",
-    color: "#000000",
-    backgroundColor: "white",
-    padding: "20px",
-    borderRadius: "8px",
-    boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-    marginTop: "30px",
-  };
-
-  const linkStyle = {
-    color: "#007bff",
-    textDecoration: "none",
-    transition: "color 0.3s ease",
-  };
-
-  return (
-    <>
-      <div style={{ padding: "2rem" }}>
-        <h1 style={headingStyle} className="variable">
-          About Me
-        </h1>
-        <div style={containerStyle}>
-          <table style={tableStyle}>
-            <tbody>
-              {[
-                ["Name", "Siddhesh Kolambekar"],
-                ["Education", "BCA from IGNOU"],
-                ["Address", "Mumbai, Maharashtra, India"],
-                ["Phone", "+91 9653198374"],
-                ["Gmail", "siddkol04@gmail.com"],
-                [
-                  "Linkedin",
-                  <a
-                    key="linkedin"
-                    href="https://www.linkedin.com/in/siddhesh-kolambekar-b25501348"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={linkStyle}
-                  >
-                    LinkedIn Profile
-                  </a>,
-                ],
-                [
-                  "GitHub",
-                  <a
-                    key="github"
-                    href="https://github.com/Siddhesh-Kolambekar"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={linkStyle}
-                  >
-                    GitHub Profile
-                  </a>,
-                ],
-              ].map(([label, value], index) => (
-                <tr key={index}>
-                  <th style={thStyle}>{label}</th>
-                  <td style={tdStyle}>{value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
-          <div style={profileTextStyle}>
-            Hi, I&apos;m Siddhesh Kolambekar, a FrontEnd developer with a strong
-            passion for building seamless, interactive, and user-friendly web
-            applications. I specialize in creating dynamic, responsive websites
-            using modern technologies like React, JavaScript, and CSS. With an
-            eye for design and detail, I focus on ensuring that every project I
-            work on delivers both functionality and a delightful user
-            experience.
-          </div>
+const About = () => (
+  <div className="content-width">
+    <div className="section-heading">
+      <p className="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>
+        Turning ideas into <span>interfaces.</span>
+      </h2>
+      <p>A practical, product-minded approach to frontend development.</p>
+    </div>
+    <div className="about-grid">
+      <article className="about-copy">
+        <p>
+          I&apos;m Siddhesh, a frontend developer based in Mumbai, India. I
+          enjoy building responsive web applications that are clear, reliable,
+          and easy to use.
+        </p>
+        <p>
+          At Sheshi, I worked on fintech dashboards with React and Next.js,
+          built reusable components, integrated REST APIs, and collaborated with
+          cross-functional teams to ship product improvements.
+        </p>
+        <p>
+          I&apos;m continuing to expand my skills across the JavaScript
+          ecosystem while keeping frontend engineering and user experience at
+          the centre of my work.
+        </p>
+        <div className="about-links">
+          <a
+            href="https://github.com/Siddhesh-Kolambekar"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub ↗
+          </a>
+          <a
+            href="https://www.linkedin.com/in/siddhesh-kolambekr"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+          <a href="mailto:siddkol04@gmail.com">Email ↗</a>
         </div>
-      </div>
-      <hr style={{ marginTop: "3vh" }} />
-    </>
-  );
-};
-
+      </article>
+      <aside className="details-card">
+        <p className="eyebrow">QUICK DETAILS</p>
+        <div>
+          <span>Location</span>
+          <strong>Mumbai, Maharashtra, India</strong>
+        </div>
+        <div>
+          <span>Education</span>
+          <strong>BCA · IGNOU (2025–2028)</strong>
+        </div>
+        <div>
+          <span>Focus</span>
+          <strong>Frontend Development</strong>
+        </div>
+        <div>
+          <span>Core stack</span>
+          <strong>React · Next.js · JavaScript</strong>
+        </div>
+      </aside>
+    </div>
+  </div>
+);
 export default About;

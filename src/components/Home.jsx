@@ -1,75 +1,61 @@
-import profile from "../../public/profile.jpg";
-import wave from "../../public/wave.png";
-
-const Home = () => {
-  return (
-    <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          alignItems: "center",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          padding: "2vh",
-          textAlign: "center",
-        }}
-      >
-        <div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexWrap: "wrap",
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "5vh",
-                fontWeight: "bold",
-                margin: "0 1vh",
-              }}
-              className="variable"
-            >
-              Hello everyone,
-            </h2>
-            <img src={wave} className="hand" alt="" style={{ width: "8vh" }} />
-          </div>
-          <h1
-            style={{
-              fontSize: "6vh",
-              fontWeight: "bold",
-              marginTop: "1vh",
-            }}
-            className="variable"
-          >
-            I am Siddhesh Kolambekar
-          </h1>
-          <h2
-            style={{
-              fontSize: "3.5vh",
-              marginTop: "1vh",
-            }}
-            className="variable"
-          >
-            A Front-End Developer
-          </h2>
-        </div>
-        <img
-          src={profile}
-          alt=""
-          style={{
-            width: "45vh",
-            maxWidth: "90%",
-            borderRadius: "50%",
-            marginTop: "2vh",
-          }}
-        />
+const Home = () => (
+  <div className="hero content-width">
+    <div className="hero-copy">
+      <p className="eyebrow">HELLO, I&apos;M SIDDHESH</p>
+      <h1>
+        Building clean, useful <span>web experiences.</span>
+      </h1>
+      <p className="hero-role">Frontend Developer · React.js · Next.js</p>
+      <p className="hero-description">
+        I build responsive interfaces, connect products to APIs, and turn
+        complex workflows into clear, user-friendly experiences.
+      </p>
+      <div className="hero-actions">
+        <a className="button button-primary" href="#projects">
+          Explore my work <span>↗</span>
+        </a>
+        <a className="button button-secondary" href="#contact">
+          Get in touch
+        </a>
       </div>
-      <hr style={{ marginTop: "3vh" }} />
-    </>
-  );
-};
-
+      <div className="hero-meta">
+        <span>
+          <i className="status-dot" /> Available for frontend opportunities
+        </span>
+        <span>Mumbai, India</span>
+      </div>
+    </div>
+    <div
+      className="hero-visual"
+      aria-label="Decorative frontend development graphic"
+    >
+      <div className="orbit orbit-one" />
+      <div className="orbit orbit-two" />
+      <div className="code-window">
+        <div className="window-dots">
+          <i />
+          <i />
+          <i />
+        </div>
+        <p>
+          <span>const</span> developer = {"{"}
+        </p>
+        <p className="code-indent">
+          name: <b>&quot;Siddhesh&quot;</b>,
+        </p>
+        <p className="code-indent">
+          focus: <b>&quot;Frontend&quot;</b>,
+        </p>
+        <p className="code-indent">
+          stack: [&quot;React&quot;, &quot;Next.js&quot;]
+        </p>
+        <p>{"}"}</p>
+        <div className="code-cursor">▍</div>
+      </div>
+      <div className="floating-tag tag-react">React.js</div>
+      <div className="floating-tag tag-next">Next.js</div>
+      <div className="floating-tag tag-ts">TypeScript</div>
+    </div>
+  </div>
+);
 export default Home;
