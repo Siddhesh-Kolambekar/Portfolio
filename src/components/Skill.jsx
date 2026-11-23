@@ -21,7 +21,6 @@ const groups = [
       "Axios",
       "JWT",
       "MongoDB",
-      "MySQL",
       "IndexedDB",
     ],
   },
